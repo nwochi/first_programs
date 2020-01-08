@@ -31,5 +31,44 @@ end
 
 year_list_array
 
+puts "Give me some words!"
+new_word = gets.chomp
+word_collection = []
+
+until gets.chomp == "" do
+    word_collection << gets.chomp
+end
+
+word_collection.sort do |a, b|
+    if a == b
+        0
+    elsif a > b
+        1
+    elsif a < b
+        -1
+    end
+end
+
+print word_collection
+
 year_list_array<<year_first
 puts year_list_array
+
+
+(year_first..year_last).each do |num|
+        if (year_first..year_last) % 4 == 0
+            year_list_array << (num)
+        end     
+end
+
+print year_list_array
+
+puts "Give me some words!"
+new_word = gets.chomp
+word_collection = []
+
+until gets.chomp == "" do
+    word_collection << gets.chomp
+end
+
+print word_collection
