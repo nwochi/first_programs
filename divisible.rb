@@ -3,9 +3,9 @@ def divisible_prm
     (1..100).each do |num|
         if (num) % 2 == 0 || (num) % 3 == 0 || (num) % 5 == 0
             my_divisibles << (num)
-            print my_divisibles
         end
     end
+print my_divisibles
 end
 
 divisible_prm
